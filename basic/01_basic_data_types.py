@@ -38,3 +38,12 @@ print(user +" loved using " +app + " for his architectural designs.")
 print("Every day, " + user + " would explore new features in " + app + " to enhance his projects.")
 print("One day, "+ user + " discovered a powerful tool in " + app + " that transformed his workflow.")
 print("From that day on, " + user + " became a " + app + " expert, creating stunning designs with ease.")
+
+
+#😉string formatting
+name = "Alice"
+age = 46
+
+print(f"Hello,{name} welcome to python programming!")
+print(f"my name is {name} and I am {age} years old.")
+
