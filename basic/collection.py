@@ -10,4 +10,24 @@ print("single item", first_item)
 # counting start from 0 in programming and -1 from the other end
 first_item = my_list[-1]
 #this will give last item which is five
-print("single item from last", first_item)
+print("single item from list", first_item)
+
+#slicing of a list
+sub_list = ['a', 'b', 'c', 'd', 'e', 'f']
+print(sub_list[2:3])
+print(sub_list[1:5])
+print(sub_list[:4])
+print(sub_list[3:])
+
+#categories of list methods
+fruits = ['apple', 'banana', 'cherry']
+header = fruits[0]
+data = fruits[1:]
+print("header:", header)
+print("data:", data)
+
+#adding item to a list
+fruits.append("mango")   #add single item
+print(fruits)
+fruits.extend(['orange', 'grape'])  #add multiple items
+print(fruits)
