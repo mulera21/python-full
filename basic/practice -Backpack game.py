@@ -13,3 +13,11 @@ backpack.append("Shield")
 backpack.append("Sword")
 backpack.append("Potion")
 print("🚨", backpack)
+
+# loot a tresure chest
+print("--" * 50)
+print("2 . 😍looting a treasure chest (Gold, Gem, Map).")
+
+chest = ["Gold", "Gem", "Map"]
+backpack.extend(chest)
+print("🚨", backpack)
