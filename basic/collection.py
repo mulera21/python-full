@@ -44,3 +44,12 @@ for point in points:
 data = (10, 20, 30, 'forty', 'fifty')  # tuple is immutable
 data_pts = ((1,2), (3,4), (5,6))  # nested tuple
 print("Tuple:", data)
+
+#Dictionary
+dict_example = {"key": "value"}
+person = {
+    "name": "John",
+    "age": 30,
+    "city": "New York"
+}
+print(person)
