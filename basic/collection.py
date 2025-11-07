@@ -31,3 +31,16 @@ fruits.append("mango")   #add single item
 print(fruits)
 fruits.extend(['orange', 'grape'])  #add multiple items
 print(fruits)
+
+#nested list
+points = [[2,4],[5,6],[6,7,8]]  #a list inside a list
+
+#looping through a list
+for point in points:
+    print(point)
+
+
+# tuple
+data = (10, 20, 30, 'forty', 'fifty')  # tuple is immutable
+data_pts = ((1,2), (3,4), (5,6))  # nested tuple
+print("Tuple:", data)
