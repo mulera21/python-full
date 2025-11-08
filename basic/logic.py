@@ -20,9 +20,16 @@ else:
 #nested if statements
 
 panel_width = 900
-panel_hieght = 2500
+panel_height = 2500
 
 if panel_width < 1200:
         print("The panel width is acceptable")
+        
+        if panel_height < 3000:
+            print("The panel height is acceptable")
+        else:
+            print("The panel height is too large")
 else:
         print("The panel width is too large")
+
+        
