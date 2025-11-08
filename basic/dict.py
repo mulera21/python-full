@@ -14,4 +14,28 @@ phonebook["edward"] = "333-333-3333"
 print("Phonebook after adding contacts:", phonebook)
 
 number = phonebook["Alice"]
-print(f"📞📞calling Alice....({number})"
+print(f"📞📞calling Alice....({number})")
+
+
+#advanced dictionary
+print("--" * 50)
+player = {"name" : "edmond",
+          "class": "warrior",
+          "level": 5,
+          "health": 100,
+            "Backpack":[]
+            }
+
+player["level"] += 1  #level up
+player["health"] -= 20  #took damage
+
+#adding items to backpack
+player["Backpack"].append("Sword")
+player["Backpack"].append("Shield")
+
+
+for key, value in player.items():
+    print(f"{key}: {value}")
+          
+          
+         
