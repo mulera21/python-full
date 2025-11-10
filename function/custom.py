@@ -6,6 +6,9 @@ say_hello()
 
 # 运行结果
 #function with arguments/parameters
+#default parameter value
+#guest
+
 
 def greet_user(name = "Guest"):
     print(f"Hello, {name}!")
