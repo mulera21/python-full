@@ -22,4 +22,10 @@ def greet_user(name):
 greet_user("Alice")
 
 
+# 运行结果
+
+def greet_user(name, greeting):
+    print(f"{greeting}, {name}!")
+greet_user("Bob", "Good morning")
+
 
