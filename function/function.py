@@ -64,4 +64,17 @@ def showData(*args, **kwargs):
     for key, value in kwargs.items():
         print(f"{key}: {value}")
 
-showData(1, 2, 3, name="David", age=35)
+showData(1, 2, 3, name="David", age=35, city="Los Angeles")
+
+
+print("--------------------retun function------------------------------")
+#--------------------------------function return--------------------------------#
+def add(num1, num2):
+    return num1 + num2
+result = add(10, 20)
+print(f"The result of addition is: {result}")
+#--------------------------------function return--------------------------------#
+def greet(name):
+    return f"Hello, {name}!"    
+message = greet("Eve")
+print(message)
