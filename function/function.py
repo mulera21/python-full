@@ -33,3 +33,10 @@ def display_info(name = None, age=None):
     print(f"Name: {name}, Age: {age}")
 
 display_info(age=25, name="Alice")
+
+#--------------------------------function many parameters--------------------------------#
+
+def showValues(*args):
+    for value in args:
+        print(f"Value: {value}")
+showValues(10, 20, 30, 40, 50)
