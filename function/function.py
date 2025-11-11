@@ -17,5 +17,12 @@ def sum(num1, num2):
     result = num1 + num2
     print(f"The sum of {num1} + {num2} is: {result}")
 
-sum(10, 20)
-#--------------------------------function two parameter--------------------------------#
+sum("hell0", "nice")
+
+#--------------------------------function two parameter specify the type--------------------------------#
+def multiply(num1: int, num2: int):
+    result = num1 * num2
+    print(f"The multiplication of {num1} * {num2} is: {result}")
+    return result
+
+multiply(5, 4)
