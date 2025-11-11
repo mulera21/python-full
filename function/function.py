@@ -54,3 +54,14 @@ def displayInfo(**kwargs):
     for value in kwargs.values():
         print(f"Value: {value}")  
 displayInfo(name="Charlie", age=28, country="USA")
+
+#--------------------------------args and kwargs--------------------------------#
+def showData(*args, **kwargs):
+    print("-----------args-----------")
+    for item in args:
+        print(f"Arg: {item}")
+    print("-----------kwargs-----------")
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+showData(1, 2, 3, name="David", age=35)
