@@ -1,7 +1,8 @@
 #classes oop
 
 class Element:
-    pass
+    def __init__(self):
+        print("Element created")
 
 #object instantiation base on template
 
