@@ -26,3 +26,10 @@ def multiply(num1: int, num2: int):
     return result
 
 multiply(5, 4)
+
+#--------------------------------function key value argument--------------------------------#
+
+def display_info(name = None, age=None):
+    print(f"Name: {name}, Age: {age}")
+
+display_info(age=25, name="Alice")
