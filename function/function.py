@@ -34,9 +34,23 @@ def display_info(name = None, age=None):
 
 display_info(age=25, name="Alice")
 
-#--------------------------------function many parameters--------------------------------#
+#--------------------------------Arbitrary Arguments--------------------------------#
 
 def showValues(*args):
     for value in args:
         print(f"Value: {value}")
-showValues(10, 20, 30, 40, 50)
+showValues(10, 20, 30, "nice", 50)
+
+#--------------------------------Arbitrary Keyword Arguments--------------------------------#
+
+def showDetails(**kwargs):  #arbitrary keyword arguments
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")    
+showDetails(name="Bob", age=30, city="New York")
+
+#--------------------------------Arbitrary Value Arguments--------------------------------#
+
+def displayInfo(**kwargs): 
+    for value in kwargs.values():
+        print(f"Value: {value}")  
+displayInfo(name="Charlie", age=28, country="USA")
