@@ -4,12 +4,14 @@
 def show_task(task):
     if task:
         print("Your Tasks:")
-        for idx in task():
-            print(f"\t- {idx}")
+        for idx, item in enumerate(task, 1):  # ✅ CORRECT: Iterate through the list
+            print(f"{idx}. {item}")
     else:
         print("No tasks available.")    
-def add_task(task):
-    pass
+def add_task(task: list):
+    input_task = input("Enter the task to add: ")
+    task.append(input_task)
+
 def remove_task(task):
     pass
 task = []
