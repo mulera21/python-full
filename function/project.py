@@ -10,3 +10,4 @@ def simple_interest():
     
     print(f"Simple Interest: {interest}")
     print(f"Total Amount after {time} years: {total_amount}")
+setup = simple_interest()
