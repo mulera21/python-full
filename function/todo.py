@@ -5,15 +5,20 @@ def show_task(task):
     if task:
         print("Your Tasks:")
         for idx, item in enumerate(task, 1):  # ✅ CORRECT: Iterate through the list
-            print(f"{idx}. {item}")
+            print(f" \t -{idx}. {item}")
     else:
         print("No tasks available.")    
 def add_task(task: list):
     input_task = input("Enter the task to add: ")
-    task.append(input_task)
+    task.append(input_task.lower)
 
-def remove_task(task):
-    pass
+def remove_task(task: list):
+    input_task = input("Enter the task to remove: ").lower()
+    if input_task in task:
+        task.remove(input_task.lower())
+        print(f"Task '{input_task}' removed.")
+    else:
+        print(f"Task '{input_task}' not found in the list.")
 task = []
 
 
