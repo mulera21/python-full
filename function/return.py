@@ -9,3 +9,10 @@ def multiply(a:int, b:int) -> int:
     return a * b
 result = multiply(4, 6)
 print(f"The product is: {result}")
+
+#--------------string return type-----------
+def greet(name: str) -> str:
+    return f"Hello, {name}!"
+
+message = greet("Alice")
+print(message)  
