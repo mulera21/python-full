@@ -13,5 +13,11 @@ print(student1.name) #accessing class attribute
 print(student2.name) #accessing class attribute
 
 #--------------------------------method in class--------------------------------#
+class Car:
+    def __init__(self, model, year):
+        self.model = model
+        self.year = year
 
-    
+mycar = Car("Toyota", 2020) #create an object of the class
+print(f"my car model is {mycar.model} and is model year {mycar.year}") #accessing instance attribute
+ #accessing instance attribute
