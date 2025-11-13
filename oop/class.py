@@ -24,3 +24,14 @@ class Car:
 mycar = Car("Toyota", 2020) #create an object of the class
  #accessing instance attribute
 mycar.display_info() #calling method of the class
+
+#--------------------------------class--------------------------------#
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def greet(self):
+        print(f"Hello, my name is {self.name} and I am {self.age} years old.")
+
+person1 = Person("Alice", 30) #create an object of the class
+person1.greet() #calling method of the class
