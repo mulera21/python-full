@@ -18,6 +18,9 @@ class Car:
         self.model = model
         self.year = year
 
+    def display_info(self):
+        print(f"Car model: {self.model}, Year: {self.year}")
+
 mycar = Car("Toyota", 2020) #create an object of the class
-print(f"my car model is {mycar.model} and is model year {mycar.year}") #accessing instance attribute
  #accessing instance attribute
+mycar.display_info() #calling method of the class
