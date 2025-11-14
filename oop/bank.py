@@ -38,8 +38,11 @@ class BankAccount:
 class BankSystem:
     def __init__(self):
             self.accounts ={} #initialize the bank system with multiple accounts
-    
-    def get_account(self, account_holder):
+    def create_account(self, name, initial_balance=0):
+        self.accounts[name] = BankAccount(initial_balance, name)
+
+    def get_account(self, name):
+        return self.accounts.get(name, None)
 
 
 
