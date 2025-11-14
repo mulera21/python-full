@@ -30,7 +30,8 @@ class BankAccount:
         print(f" Account holder: {self.account_holder}. Current balance: ksh{self.balance}")
 
     def print_transaction_history(self):
-        print("Transaction History:")
+        print("------------------------------------------------------------")
+        print(f"Transaction History: {self.account_holder}")
         for transaction in self.transaction_history:
             print(transaction)
 
@@ -38,3 +39,4 @@ my_account = BankAccount(0, "John Doe")
 my_account.deposit(100)
 my_account.withdraw(10)
 my_account.check_balance()
+my_account.print_transaction_history()
