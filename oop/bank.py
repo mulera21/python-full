@@ -4,11 +4,13 @@ class BankAccount:
     def __init__(self, balance, account_holder):
         self.balance = balance
         self.account_holder = account_holder
+        self.transaction_history = [] # store transaction history
 
     def deposit(self, amount):
         #addd money to bank account
         if amount > 0:
             self.balance += amount
+            self.transaction_history.append(f"Deposited ksh {amount}")
             print(f" ksh {amount} deposited. New balance: ksh{self.balance}")
         else:
             print("Invalid deposit amount.")    
@@ -18,6 +20,7 @@ class BankAccount:
         #remove money from bank account
         if self.balance >= amount > 0 :
             self.balance -= amount
+            self.transaction_history.append(f"Withdrew ksh {amount}")
             print(f" ksh {amount} withdrawn. New balance: ksh{self.balance}")
         else:
             print("Invalid withdrawal amount.")    
@@ -25,6 +28,11 @@ class BankAccount:
     def check_balance(self):
         #check current balance
         print(f" Account holder: {self.account_holder}. Current balance: ksh{self.balance}")
+
+    def print_transaction_history(self):
+        print("Transaction History:")
+        for transaction in self.transaction_history:
+            print(transaction)
 
 my_account = BankAccount(0, "John Doe")
 my_account.deposit(100)
