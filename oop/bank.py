@@ -7,8 +7,11 @@ class BankAccount:
 
     def deposit(self, amount):
         #addd money to bank account
-        self.balance += amount
-        print(f" &{amount} deposited. New balance: {self.balance}")
+        if amount > 0:
+            self.balance += amount
+            print(f" &{amount} deposited. New balance: {self.balance}")
+        else:
+            print("Invalid deposit amount.")    
 
 
     def withdraw(self):
@@ -19,5 +22,5 @@ class BankAccount:
         #check current balance
         pass
 
-my_account = BankAccount()
-my_account.deposit()
+my_account = BankAccount(0, "John Doe")
+my_account.deposit(100)
