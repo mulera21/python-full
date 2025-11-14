@@ -66,3 +66,8 @@ if Alice_account:
     Alice_account.deposit(100)
     Alice_account.withdraw(50)
     Alice_account.print_transaction_history()
+
+print("--- second Alice's Account------")
+
+second_Alice_account = bank.get_account("Alice")
+second_Alice_account.check_balance()
