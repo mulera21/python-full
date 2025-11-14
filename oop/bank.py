@@ -54,3 +54,7 @@ bank = BankSystem()
 
 bank.create_account("John", 100)
 John_account = bank.get_account("John")
+if John_account:
+    John_account.deposit(50)
+    John_account.withdraw(20)
+    John_account.print_transaction_history()
