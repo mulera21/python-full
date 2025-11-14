@@ -9,16 +9,18 @@ class BankAccount:
         #addd money to bank account
         if amount > 0:
             self.balance += amount
-            print(f" &{amount} deposited. New balance: {self.balance}")
+            print(f" ksh {amount} deposited. New balance: ksh{self.balance}")
         else:
             print("Invalid deposit amount.")    
 
 
     def withdraw(self, amount):
         #remove money from bank account
-        self.balance -= amount
-        print(f" &{amount} withdrawn. New balance: {self.balance}")
-        
+        if amount > 0 :
+            self.balance -= amount
+            print(f" ksh {amount} withdrawn. New balance: ksh{self.balance}")
+        else:
+            print("Invalid withdrawal amount.")    
 
     def check_balance(self):
         #check current balance
@@ -26,4 +28,4 @@ class BankAccount:
 
 my_account = BankAccount(0, "John Doe")
 my_account.deposit(100)
-my_account.withdraw(50)
+my_account.withdraw(27)
