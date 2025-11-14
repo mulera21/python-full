@@ -14,9 +14,11 @@ class BankAccount:
             print("Invalid deposit amount.")    
 
 
-    def withdraw(self):
+    def withdraw(self, amount):
         #remove money from bank account
-        pass
+        self.balance -= amount
+        print(f" &{amount} withdrawn. New balance: {self.balance}")
+        
 
     def check_balance(self):
         #check current balance
@@ -24,3 +26,4 @@ class BankAccount:
 
 my_account = BankAccount(0, "John Doe")
 my_account.deposit(100)
+my_account.withdraw(50)
