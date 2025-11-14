@@ -58,3 +58,11 @@ if John_account:
     John_account.deposit(50)
     John_account.withdraw(20)
     John_account.print_transaction_history()
+
+print("---Alice's Account------")
+bank.create_account("Alice", 200)
+Alice_account = bank.get_account("Alice")
+if Alice_account:
+    Alice_account.deposit(100)
+    Alice_account.withdraw(50)
+    Alice_account.print_transaction_history()
