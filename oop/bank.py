@@ -35,6 +35,14 @@ class BankAccount:
         for transaction in self.transaction_history:
             print(transaction)
 
+class BankSystem:
+    def __init__(self):
+            self.accounts ={} #initialize the bank system with multiple accounts
+    
+    def get_account(self, account_holder):
+
+
+
 my_account = BankAccount(0, "John Doe")
 my_account.deposit(100)
 my_account.withdraw(10)
