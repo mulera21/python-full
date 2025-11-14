@@ -46,8 +46,11 @@ class BankSystem:
 
 
 
-my_account = BankAccount(0, "John Doe")
-my_account.deposit(100)
-my_account.withdraw(10)
-my_account.check_balance()
-my_account.print_transaction_history()
+#my_account.deposit(100)
+#my_account.withdraw(10)
+#my_account.print_transaction_history()
+
+bank = BankSystem()
+
+bank.create_account("John", 100)
+John_account = bank.get_account("John")
