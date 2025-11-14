@@ -16,7 +16,7 @@ class BankAccount:
 
     def withdraw(self, amount):
         #remove money from bank account
-        if amount > 0 :
+        if self.balance >= amount > 0 :
             self.balance -= amount
             print(f" ksh {amount} withdrawn. New balance: ksh{self.balance}")
         else:
@@ -24,8 +24,9 @@ class BankAccount:
 
     def check_balance(self):
         #check current balance
-        pass
+        print(f" Account holder: {self.account_holder}. Current balance: ksh{self.balance}")
 
 my_account = BankAccount(0, "John Doe")
 my_account.deposit(100)
-my_account.withdraw(27)
+my_account.withdraw(10)
+my_account.check_balance()
