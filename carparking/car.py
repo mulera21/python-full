@@ -16,6 +16,9 @@ class Car:
         return f"Car {self.license_plate} parked at spot {self.parking_spot}."
     def leave(self):
         return f"Car {self.license_plate} has left the parking spot {self.parking_spot}."
+    def charge_fee(self, hours_parked, rate_per_hour):
+        return hours_parked * rate_per_hour 
+    
 # Example usage
 
 
@@ -26,3 +29,5 @@ car1_park_message = car1.park()
 print(car1_park_message)
 car1_leave_message = car1.leave()
 print(car1_leave_message)
+fee = car1.charge_fee(3, 5)  # 3 hours parked at $5 per hour
+print(f"Parking fee for car {car1.license_plate}: ${fee}")
