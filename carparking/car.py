@@ -12,7 +12,13 @@ class Car:
             "Owner Name": self.owner_name,
             "Parking Spot": self.parking_spot
         }
+    def park(self):
+        return f"Car {self.license_plate} parked at spot {self.parking_spot}."
+# Example usage
+
 
 car1 = Car("ABC123", "John Doe", "A1")
 car1_details = car1.get_details()
 print(car1_details)
+car1_park_message = car1.park()
+print(car1_park_message)
