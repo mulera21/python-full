@@ -31,3 +31,13 @@ car1_leave_message = car1.leave()
 print(car1_leave_message)
 fee = car1.charge_fee(3, 5)  # 3 hours parked at $5 per hour
 print(f"Parking fee for car {car1.license_plate}: ${fee}")
+
+car2 = Car("XYZ789", "Jane Smith", "B2")
+car2_details = car2.get_details()
+print(car2_details)
+car2_park_message = car2.park()
+print(car2_park_message)
+car2_leave_message = car2.leave()
+print(car2_leave_message)
+fee2 = car2.charge_fee(2, 5)  # 2 hours parked at $5 per hour
+print(f"Parking fee for car {car2.license_plate}: ${fee2}")
