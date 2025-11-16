@@ -12,3 +12,7 @@ class Student:
             "Student ID": self.student_id,
             "Major": self.major
         }
+    
+student1 = Student("Alice Johnson", "S12345", "Computer Science")
+student1_details = student1.get_details()
+print(student1_details)
