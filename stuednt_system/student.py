@@ -29,20 +29,15 @@ class Student:
             return f"Student {self.name} is not enrolled in {course}." 
     def pay_tuition(self, amount):
         return f"Student {self.name} has paid tuition of ${amount}."
+    def show_enrolled_courses(self):
+        return f"Student {self.name} is enrolled in the following courses: {', '.join(self.enrolled_courses)}"  
+    
+def main():
+    print("------------Student Management System------------")
+     #get information from user
+    name = input("Enter student name: ")
+    student_id = input("Enter student ID: ")
+    major = input("Enter student major: ")
 
-print("------------Student Management System------------")
-student1 = Student("Alice Johnson", "S12345", "Computer Science")
-student1_details = student1.get_details()
-print(student1_details)
+    student1 = Student(name, student_id, major)
 
-print("-----student1_details enrolled --------")
-enrollment_message = student1.enroll("Math 101, Physics 201, Chemistry 301, Literature 101, History 201")
-print(enrollment_message)
-
-print("-----student1_details dropped course --------")
-drop_message = student1.drop_course("Math 101")
-print(drop_message)
-
-print("-----student1_details paid tuition --------")
-tuition_message = student1.pay_tuition(5000)
-print(tuition_message)
