@@ -22,7 +22,11 @@ class Student:
             return f"Student {self.name} is already enrolled in {course}."  
 
     def drop_course(self, course):
-        return f"Student {self.name} has dropped the course {course}." 
+        if course in self.enrolled_courses:
+            self.enrolled_courses.remove(course)
+            return f"Student {self.name} has dropped the course {course}." 
+        else:
+            return f"Student {self.name} is not enrolled in {course}." 
     def pay_tuition(self, amount):
         return f"Student {self.name} has paid tuition of ${amount}."
 
