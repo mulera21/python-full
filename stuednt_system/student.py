@@ -39,5 +39,43 @@ def main():
     student_id = input("Enter student ID: ")
     major = input("Enter student major: ")
 
-    student1 = Student(name, student_id, major)
+    student1 = Student(name, student_id, major) #create object
 
+    while True:
+        print("\n student Menu:")
+        print("1. View Student Details")
+        print("2. Enroll in a Course")
+        print("3. Drop a Course")
+        print("4. Pay Tuition")
+        print("5. Show Enrolled Courses")
+        print("6. Exit")
+
+        choice = input("Enter your choice (1-6): ")
+
+        if choice == '1':
+            details = student1.get_details()
+            for key, value in details.items():
+                print(f"{key}: {value}")
+        elif choice == '2':
+            course = input("Enter course name to enroll: ")
+            message = student1.enroll(course)
+            print(message)
+        elif choice == '3':
+            course = input("Enter course name to drop: ")
+            message = student1.drop_course(course)
+            print(message)
+        elif choice == '4':
+            amount = float(input("Enter tuition amount to pay: "))
+            message = student1.pay_tuition(amount)
+            print(message)
+        elif choice == '5':
+            courses_message = student1.show_enrolled_courses()
+            print(courses_message)
+        elif choice == '6':
+            print("Exiting Student Management System.")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
