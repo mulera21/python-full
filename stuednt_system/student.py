@@ -5,15 +5,21 @@ class Student:
         self.name =name
         self.student_id = student_id
         self.major = major
+        self.enrolled_courses = [] #list
     
     def get_details(self):
         return {
             "Name": self.name,
             "Student ID": self.student_id,
-            "Major": self.major
+            "Major": self.major,
+            "Enrolled Courses": self.enrolled_courses
         }
     def enroll(self, course):
-        return f"Student {self.name} has enrolled in {course}."  
+        if course not in self.enrolled_courses:
+            self.enrolled_courses.append(course)
+            return f"Student {self.name} has enrolled in {course}." 
+        else:
+            return f"Student {self.name} is already enrolled in {course}."  
 
     def drop_course(self, course):
         return f"Student {self.name} has dropped the course {course}." 
