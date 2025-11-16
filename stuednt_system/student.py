@@ -13,13 +13,20 @@ class Student:
             "Major": self.major
         }
     def enroll(self, course):
-        return f"Student {self.name} has enrolled in {course}."   
+        return f"Student {self.name} has enrolled in {course}."  
+
+    def drop_course(self, course):
+        return f"Student {self.name} has dropped the course {course}." 
 
 print("------------Student Management System------------")
 student1 = Student("Alice Johnson", "S12345", "Computer Science")
 student1_details = student1.get_details()
+print(student1_details)
 
 print("-----student1_details enrolled --------")
-enrollment_message = student1.enroll("Math 101")
-print(student1_details)
+enrollment_message = student1.enroll("Math 101, Physics 201, Chemistry 301, Literature 101, History 201")
 print(enrollment_message)
+
+print("-----student1_details dropped course --------")
+drop_message = student1.drop_course("Math 101")
+print(drop_message)
