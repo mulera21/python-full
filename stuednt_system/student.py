@@ -17,6 +17,8 @@ class Student:
 
     def drop_course(self, course):
         return f"Student {self.name} has dropped the course {course}." 
+    def pay_tuition(self, amount):
+        return f"Student {self.name} has paid tuition of ${amount}."
 
 print("------------Student Management System------------")
 student1 = Student("Alice Johnson", "S12345", "Computer Science")
@@ -30,3 +32,7 @@ print(enrollment_message)
 print("-----student1_details dropped course --------")
 drop_message = student1.drop_course("Math 101")
 print(drop_message)
+
+print("-----student1_details paid tuition --------")
+tuition_message = student1.pay_tuition(5000)
+print(tuition_message)
