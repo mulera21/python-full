@@ -11,6 +11,8 @@ class Student:
         print(f"\tName: {self.name}")
         print(f"\tAge: {self.age}")
         print(f"\tGrade: {self.__grade}")
+        print(f"\tAverage: {self.get_average()}")
+
     def add_grade(self, grade):
         if 0<grade<=100:
             self.__grade.append(grade)
@@ -20,7 +22,7 @@ class Student:
     
     def get_average(self):
         if len(self.__grade)> 0:
-            avarage = sum(self.__grade) / len(self.__grade)
+            average = sum(self.__grade) / len(self.__grade)
         else:
             return 0
 
@@ -34,4 +36,3 @@ student1.add_grade(34)
 student1.add_grade(50)
 student1.display_infor()
 
-print(f"Average: {student1.get_average()}")
