@@ -14,7 +14,7 @@ class Student:
     def add_grade(self, grade):
         if 0<grade<=100:
             self.__grade.append(grade)
-            print(f"Grade{grade} added for {self.__grade}")
+            print(f"Grade {grade} added for {self.name}")
         else:
             print("invalid grade it shhould be 0 to 100")
 
@@ -24,5 +24,5 @@ class Student:
 
 student1 = Student("Alice", 20,)
 student1.display_infor()
-student1.grade.append(100)
+student1.add_grade(34)
 student1.display_infor()
