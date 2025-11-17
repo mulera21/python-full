@@ -21,8 +21,9 @@ class Student:
             print("invalid grade it shhould be 0 to 100")
     
     def get_average(self):
-        if len(self.__grade)> 0:
+        if len(self.__grade)>0:
             average = sum(self.__grade) / len(self.__grade)
+            return average
         else:
             return 0
 
@@ -34,5 +35,6 @@ student1 = Student("Alice", 20,)
 student1.display_infor()
 student1.add_grade(34)
 student1.add_grade(50)
+student1.add_grade(76)
 student1.display_infor()
 
