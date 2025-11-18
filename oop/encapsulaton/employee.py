@@ -21,7 +21,10 @@ class Employee:
     def display(self):
         """public getting name and salary"""
         print(f"name is: {self.name} and the salary is: {self.get_salary()}")
-        
+
 #using the class
 employee = Employee('mike', 1500)
 employee.display()
+
+# Get salary using getter
+print(f"Current salary: ${employee.get_salary()}")  # Current salary: $1500
