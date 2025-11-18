@@ -20,7 +20,8 @@ class Employee:
     
     def display(self):
         """public getting name and salary"""
-        print(f"name is: {self.name} and the salary is: {self.salary}")
-
+        print(f"name is: {self.name} and the salary is: {self.get_salary()}")
+        
+#using the class
 employee = Employee('mike', 1500)
 employee.display()
