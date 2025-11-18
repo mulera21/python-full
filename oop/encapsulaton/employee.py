@@ -7,3 +7,6 @@ class Employee:
     
     def display(self):
         print(f"name is: {self.name} and the salary is: {self.salary}")
+
+employee = Employee('mike', 1500)
+employee.display()
