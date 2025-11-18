@@ -10,6 +10,14 @@ class Employee:
         """public getting salary"""
         return self.__salary
     
+    def set_salary(self, new_salary):
+        """Public method to set salary with validation (setter)"""
+        if new_salary >= 0:  # validation
+            self.__salary = new_salary
+            print(f"Salary updated to: ${new_salary}")
+        else:
+            print("Error: Salary cannot be negative!")
+    
     def display(self):
         """public getting name and salary"""
         print(f"name is: {self.name} and the salary is: {self.salary}")
