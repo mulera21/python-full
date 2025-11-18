@@ -7,4 +7,7 @@ class Finance:
 
 f1 = Finance()
 
-class
+class HR:
+    def __init__(self):
+        self.number_of_emp= 32
+        
