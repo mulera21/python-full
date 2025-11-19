@@ -8,4 +8,8 @@ class Book:
         self.borrowed = 0
     
     def display_info(self):
-        
+        print(f"----------Book info----------")
+        print(f"\tTitle: {self.title}")
+        print(f"\tAuthor: {self.author}")
+        print(f"\tTotal copies: {self.total_copies}")
+        print(f"Borrowed Copies: {self.borrowed}")
