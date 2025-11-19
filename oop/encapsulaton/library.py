@@ -13,3 +13,7 @@ class Book:
         print(f"\tAuthor: {self.author}")
         print(f"\tTotal copies: {self.total_copies}")
         print(f"Borrowed Copies: {self.borrowed}")
+
+book = Book("Alissa", "c.j more", 7 )
+
+book.display_info()
