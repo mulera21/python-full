@@ -17,6 +17,8 @@ class Book:
         if self.borrowed>0:
             self.borrowed-=1
             print(f"Return 1 copy of {self.title}")
+        else:
+            print(f"No copies of {self.borrowed}")
     
     def display_info(self):
         print(f"----------Book info----------")
@@ -27,4 +29,10 @@ class Book:
 
 book = Book("Alissa", "c.j more", 7 )
 
+book.display_info()
+book.borrow_book()
+book.borrow_book()
+book.borrow_book()
+book.borrow_book()
+book.return_book()
 book.display_info()
