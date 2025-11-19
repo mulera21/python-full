@@ -6,6 +6,12 @@ class Book:
         self.author = author
         self.total_copies = total_copies
         self.borrowed = 0
+    def borrow_book(self):
+        if self.borrowed<self.total_copies:
+            self.borrowed+=1
+            print(f"Borrowed 1 copy of {self.title}")
+        else:
+            print(f"Sorry all copies of {self.title} are currently borrowed")
     
     def display_info(self):
         print(f"----------Book info----------")
