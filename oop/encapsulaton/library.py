@@ -19,6 +19,8 @@ class Book:
             print(f"Return 1 copy of {self.title}")
         else:
             print(f"No copies of {self.__borrowed}")
+    def get_availability(self):
+        return self.__total_copies - self.__borrowed
     
     def display_info(self):
         print(f"----------Book info----------")
@@ -26,6 +28,8 @@ class Book:
         print(f"\tAuthor: {self.author}")
         print(f"\tTotal copies: {self.__total_copies}")
         print(f"Borrowed Copies: {self.__borrowed}")
+        print(f"\t Available copies: {self.get_availability()}")
+        print(f"----------------------------------")
 
 book = Book("Alissa", "c.j more", 7 )
 
