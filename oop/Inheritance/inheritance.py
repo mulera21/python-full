@@ -9,4 +9,7 @@ class Person:
         print(f"{self.name} is {self.age} years old")
 
 class Employee(Person):
-    
+    pass
+
+emp1 = Employee()
+
