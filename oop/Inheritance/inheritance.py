@@ -7,3 +7,6 @@ class Person:
 
     def display_info(self):
         print(f"{self.name} is {self.age} years old")
+
+class Employee(Person):
+    
