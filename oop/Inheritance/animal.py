@@ -11,7 +11,8 @@ class Animal:
         print(f"{self.name} is sleeping")
 
 class Mammal(Animal):
-    pass
+    def nurse(self):
+        print(f"{self.name} is nursing")
 
 class Bird(Animal):
     pass
@@ -21,6 +22,7 @@ class Reptile(Animal):
 
 cat = Mammal("cute")
 cat.eat()
+cat.nurse()
 
 parrot = Bird("pinky")
 parrot.sleep()
