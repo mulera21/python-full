@@ -21,3 +21,9 @@ class Reptile(Animal):
 
 cat = Mammal("cute")
 cat.eat()
+
+parrot = Bird("pinky")
+parrot.sleep()
+
+snake = Reptile("spokey")
+snake.eat()
