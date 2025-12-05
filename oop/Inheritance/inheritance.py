@@ -14,4 +14,6 @@ class Employee(Person):
 emp1 = Employee("edu", 25)
 
 emp1.display_info()
+emp1.age = 37
+emp1.display_info()
 
