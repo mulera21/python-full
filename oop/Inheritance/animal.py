@@ -10,7 +10,7 @@ class Animal:
     def sleep(self):
         print(f"{self.name} is sleeping")
 
-class mammal(Animal):
+class Mammal(Animal):
     pass
 
 class Bird(Animal):
@@ -18,3 +18,6 @@ class Bird(Animal):
 
 class Reptile(Animal):
     pass
+
+cat = Mammal("cute")
+cat.eat()
