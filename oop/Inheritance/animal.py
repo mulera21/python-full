@@ -11,4 +11,10 @@ class Animal:
         print(f"{self.name} is sleeping")
 
 class mammal(Animal):
-    
+    pass
+
+class Bird(Animal):
+    pass
+
+class Reptile(Animal):
+    pass
