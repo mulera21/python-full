@@ -13,6 +13,9 @@ class Animal:
 class Mammal(Animal):
     def nurse(self):
         print(f"{self.name} is nursing")
+class Dog(Mammal):
+    def fetch(self):
+        print(f"{self.name} is fetching the ball")
 
 class Bird(Animal):
     def fly(self):
@@ -33,3 +36,8 @@ parrot.fly()
 snake = Reptile("spokey")
 snake.eat()
 snake.kill()
+
+# class dog
+mydog = Dog("mike")
+mydog.sleep()
+mydog.fetch()
