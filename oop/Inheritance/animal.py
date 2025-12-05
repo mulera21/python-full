@@ -19,7 +19,8 @@ class Bird(Animal):
         print(f"{self.name} is swimming on water")
 
 class Reptile(Animal):
-    pass
+    def kill(self):
+        print(f"{self.name} is hiding")
 
 cat = Mammal("cute")
 cat.eat()
@@ -31,3 +32,4 @@ parrot.fly()
 
 snake = Reptile("spokey")
 snake.eat()
+snake.kill()
