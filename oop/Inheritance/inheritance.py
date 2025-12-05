@@ -11,7 +11,7 @@ class Person:
 class Employee(Person):
     pass
 
-emp1 = Employee("mike", 25)
+emp1 = Employee("edu", 25)
 
 emp1.display_info()
 
