@@ -11,3 +11,8 @@ class Dog(Animal):
 class Cat(Animal):
     def speak(self):
         print("The cat meows")
+
+# Example usage
+animals = [Dog(), Cat(), Animal()]
+for animal in animals:
+    animal.speak()
