@@ -17,7 +17,7 @@ class Dog(Mammal):
     def fetch(self):
         print(f"{self.name} is fetching the ball")
     def make_sound(self):
-        return super().make_sound() + " Woof!"
+        print(f"{self.name} says Woof!")
 
 class Bird(Animal):
     def fly(self):
@@ -43,3 +43,4 @@ snake.kill()
 mydog = Dog("mike")
 mydog.sleep()
 mydog.fetch()
+mydog.make_sound()
